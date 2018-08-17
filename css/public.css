@@ -1,0 +1,409 @@
+/*布局*/
+.main{
+	width: 1120px;
+	height: 635px;
+	margin:0px auto;
+}
+body{
+	height: 2500px;
+}
+*{
+	margin:0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+a{
+	outline: none;
+	/*font: 16px/45px "Microsoft Yahei";*/
+}
+.border{
+	border:1px solid blue;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.adImg{
+	position:relative;
+	display:block;
+	
+}
+.adImg  span{
+	width:100%;
+	position:absolute;
+	left:0;
+	bottom:0;
+	text-align:center;
+	height:65px;
+	font:18px/65px "Microsoft Yahei";
+	background:url("../img/center.png");
+}
+/*fd-tit*/
+.fd-tit{
+    width: 315px;
+    height: 28px;
+    line-height: 28px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+    position: absolute;
+    top: 278px;
+    left: 20px;
+}
+.fd-tit .fd-title{
+    float: left;
+    margin-right: 4px;
+    display: inline;
+}
+.fd-tit .fd-icon{
+	height: 28px;
+    float: left;
+    display: inline;
+    background: url(../img/indexPic.png) no-repeat;
+}
+/*名片并排*/
+.card{
+	width: 100%;
+	height: 100%;
+}
+.card ul li{
+	width: 180px;
+	height: 210px;
+	float: left;
+	text-align: center;
+	background: #f2f2f2;
+}
+.card ul li:nth-child(2){
+	margin-left: 5px;
+}
+.card ul li img{
+	border-radius: 50%;
+	margin: 11px 0px;
+}
+
+.card ul li a{
+	font-size: 14px;
+	line-height: 11px;
+}
+.card ul li a:hover{
+	color:#e50a80;
+}
+.card ul li a i{
+    color: #888;
+    padding-left: 2px;
+}
+
+/*选项卡*/
+.tab-box{
+	position: relative;
+	height: 100%;
+    overflow: hidden;
+}
+.tab-box .tab{
+	bottom: 0px;
+	border-top: 2px solid #000;
+    overflow: hidden;
+}
+.tab-box .tab a{
+	float: left;
+    width: 68px;
+    height: 15px;
+    line-height: 15px;
+    display: inline;
+    margin: 0 2px 0 0;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    background: #666;
+    font-family: Tahoma;
+}
+.tab-box .tab .on{
+	background: #000;
+}
+.tab-box .box{
+	overflow: hidden;
+}
+
+/*底部三图*/
+.tfoot{
+	height: 287px;
+	margin-top: 30px;
+}
+.tfoot .maya{
+	margin:0 26px;
+}
+
+.tfoot .imgBox:hover span{
+	color: #666;
+}
+.tfoot span{
+	margin-top: -10px;
+}
+/*图文--图文分开*/
+.imgBox{
+	width: 355px;
+	height: 230px;
+	float: left;
+}
+.imgTxt{
+	height: 45px;
+    display: block;
+    color: #000;
+    font: 16px/45px "Microsoft Yahei";
+    overflow: hidden;
+    text-align: center;
+}
+.op:hover{
+	opacity: .8;
+}
+/*图文--图文合并*/
+.boxImg{
+	position: relative;
+	width: 170px;
+	height: 260px;
+	float: left;
+}
+.boxImg span{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #fff;
+	font-size: 14px;
+	height: 40px;
+	line-height: 40px;
+	background: url(../img/C-shadow.png) no-repeat;
+	text-align: center;
+	width: 100%;
+}
+
+/*项目布局*/
+.thead{
+	height: 122px;
+	margin-top: 50px;
+}
+.thead .thead-icon b{
+	display: block;
+}
+.thead .navlist a{
+	color:#000;
+}
+.thead .navlist a:hover{
+	color:#e5077c;
+}
+
+/*列表项*/
+.list-title{
+	width: 316px;
+    height: 222px;
+    padding: 17px 0 0 22px;
+    background: #fff;
+    border:9px solid #eee;
+}
+.list-title li{
+    height: 30px;
+    overflow: hidden;
+    vertical-align: top;
+    padding-left: 37px;
+    background-image: url(../img/indexPic.png);
+ 
+}
+.list-title li:hover a{
+	color: #736969;
+}
+.list-title li:hover{
+	margin-left: 15px;
+    transition: .2s;
+}
+.list-title li.t1{
+	background-position: -440px 6px;
+}
+.list-title li.t2{
+	background-position: -440px -196px;
+}
+.list-title li.t3{
+	background-position: -440px -36px;
+}
+.list-title li.t4{
+	background-position: -440px -236px;
+}
+.list-title li.t5{
+	background-position: -440px -76px;
+}
+.list-title li.t6{
+	background-position: -440px -276px;
+}
+.list-title li.t7{
+	background-position: -440px -116px;
+}
+.list-title li a{
+	color: #000;
+    outline: none;
+    font: 14px/30px "Microsoft Yahei";
+}
+
+/*轮播图*/
+.banner{
+	position: relative;
+	margin:0px auto;
+	overflow: hidden;
+}
+.banner:hover .btn {
+	opacity: 1;
+}
+.pic{
+	position: relative;
+}
+.pic ul{
+	width: 1000%;
+	margin-left: -100%;
+}
+.pic ul li a{
+	float: left;
+	position: relative;
+	display: block;
+}
+.pic ul li a img{
+	display: block;
+}
+.pic ul li a span{
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 0px;
+	left:0;
+	height: 80px;
+	line-height: 80px;
+	font-size:20px;
+	color:#fff;
+	background: url(../img/B-shadow.png) no-repeat center;
+}
+.pic ul li a span p{
+	font-size: 16px;
+	width: 80%;
+	padding-left: 37px;
+	padding-top: 5px;
+}
+.btn{
+	opacity: 0;
+	transition: .5s;
+}
+.btn a{
+	position: absolute;
+	top:50%;
+	margin-top: -35px;
+	width: 70px;
+	height: 70px;
+	background-image: url(../img/arrow.png);
+	border-radius: 50%;
+}
+.btn .prev{
+	left: 0;
+	background-position: 0px 0px;
+}
+.btn .prev:hover{
+	background-position: -70px 0px;
+}
+.btn .next{
+	right: 0;
+	background-position: 0px -70px;
+}
+.btn .next:hover{
+	background-position: -70px -70px;
+}
+.tab{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 20px;
+	text-align: center;
+}
+.tab a{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: #b0b0b0;
+	margin-right: 7px;
+}
+.tab .on{
+	background: #e5077c;
+}
+
+/*thead图标*/
+.thead{
+	text-align: center;
+
+}
+
+.thead b{
+	background: url(../img/indexPic.png);
+	width: 254px;
+	height: 56px;
+	margin:0 auto;
+}
+.thead .thead-icon{
+	border-bottom: 1px solid #000;
+}
+.navlist a{
+	position: relative;
+	display: inline-block;
+	font-size: 16px;
+	line-height: 45px;
+	color:#000;
+	padding: 0 8px;
+	width: 75px;
+	text-align: center;
+}
+.navlist a:hover{
+	color:#e5077c;
+}
+.navlist i{
+	display: inline-block;
+    width: 1px;
+    height: 12px;
+    background: #ccc;
+    margin: 0px 15px;
+}
+/*包含小图--轮播图*/
+.modBox {
+	height: 295px;
+	/*margin-bottom: 50px;*/
+}
+.modBox .main{
+	position: relative;
+	height: 262px;
+	background: url(../img/imgs_bg.png) repeat-x;
+	padding-top:30px;
+	background: #f2f2f2;
+	overflow: hidden;
+}
+.modBox .main .banner{
+	width:100%;
+	height:248px;
+
+}
+.modBox .main .tab{
+	bottom: 0;
+}
+.modBox .main .pic a{
+	width:260px;
+	height:240px;
+	float:left;
+	margin-right:26px;
+	overflow: hidden;
+	
+}
+.modBox .main .pic a span{
+	height:45px;
+	line-height:45px;
+	background:none;
+	font-size:16px;
+	color: #000;
+}
+
+.modBox .main .pic a:nth-child(4){
+	margin-right: 2px;
+}
